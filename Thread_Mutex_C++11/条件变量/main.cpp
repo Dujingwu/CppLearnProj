@@ -54,3 +54,6 @@ int main()
 
 	return 0;
 }
+
+//设置循环等待占用cpu,设置延时等待具体的等待时间难以界定,解决方案是:条件变量
+//uniquelock可以重复加解锁lockguard不行,cond.wait必须传入uniquelock参数

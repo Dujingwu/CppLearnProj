@@ -20,6 +20,7 @@ public:
 		}*/
 		call_once(m_flag, [&]() {of.open("log.txt"); });//
 
+		//unique_lock<mutex> locker(m_mutex);等价下面两句
 		unique_lock<mutex> locker(m_mutex, defer_lock);
 		locker.lock();
 		of << "from" << id << ": " << value << endl;
@@ -53,3 +54,6 @@ int main() {
 	t1.join();
 	return 0;
 }
+
+//uniquelock  defer_lock()让mutex暂时不被锁住,当要加锁再lock()\
+//uniquelock  可以move

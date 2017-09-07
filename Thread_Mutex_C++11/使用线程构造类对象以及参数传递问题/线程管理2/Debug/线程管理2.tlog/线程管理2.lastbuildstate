@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.15063.0
+Debug|Win32|F:\Projs_learn\practiceProj\myCppProj\Thread_Mutex_C++11\使用线程构造类对象以及参数传递问题\线程管理2\|
